@@ -1,0 +1,18 @@
+{
+  "description": "Ground truth for the 10 seed invoices. Each expected finding is (check_type, amount_at_risk). Amounts for payment_terms_mismatch are working-capital cost and are not scored.",
+  "invoices": {
+    "acme_ACME-1001.pdf": [],
+    "acme_ACME-1002.pdf": [{"check_type": "price_overcharge", "amount_at_risk": 60.00}],
+    "acme_ACME-1003.pdf": [{"check_type": "missing_discount", "amount_at_risk": 52.50}],
+    "northwind_NW-2001.pdf": [],
+    "northwind_NW-2002.pdf": [
+      {"check_type": "missing_discount", "amount_at_risk": 120.00},
+      {"check_type": "payment_terms_mismatch", "amount_at_risk": null}
+    ],
+    "northwind_NW-2003.pdf": [{"check_type": "price_overcharge", "amount_at_risk": 200.00}],
+    "brightclean_BC-3001.pdf": [],
+    "brightclean_BC-3001_resubmitted.pdf": [{"check_type": "duplicate_invoice", "amount_at_risk": 3790.00}],
+    "brightclean_BC-3003.pdf": [{"check_type": "payment_terms_mismatch", "amount_at_risk": null}],
+    "brightclean_BC-3004.pdf": [{"check_type": "price_overcharge", "amount_at_risk": 60.00}]
+  }
+}

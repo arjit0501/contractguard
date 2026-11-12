@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+uploads/
+node_modules/
+dist/
+.DS_Store
+backend/evals/results_*.md
